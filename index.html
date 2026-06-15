@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +11,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <nav class="nav container">
       <a class="logo" href="#top">George Sabrina</a>
       <div class="nav-links" aria-label="Main navigation">
         <a href="#work">Work</a>
+        <a href="#gallery">Screenshots</a>
         <a href="#skills">Skills</a>
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
@@ -38,16 +41,8 @@
         </div>
       </div>
 
-      <div class="hero-card" aria-label="Portfolio summary card">
-        <div class="card-topline"></div>
-        <h2>Asset Review Demo</h2>
-        <p>A focused Godot prototype for inspecting and refining digital assets in a structured scene.</p>
-        <ul>
-          <li>Scene composition</li>
-          <li>Imported assets</li>
-          <li>GDScript interaction</li>
-          <li>UI annotations</li>
-        </ul>
+      <div class="hero-image-card">
+        <img src="assets/images/hero-scene.png" alt="Godot Asset Review Demo scene preview">
       </div>
     </section>
 
@@ -59,17 +54,7 @@
 
       <div class="project-grid">
         <article class="project-card large">
-          <div class="mockup">
-            <div class="mockup-bar">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="mockup-scene">
-              <div class="asset cube"></div>
-              <div class="asset sphere"></div>
-              <div class="asset panel">UI Label</div>
-              <div class="ground"></div>
-            </div>
-          </div>
+          <img class="project-image" src="assets/images/gameplay.png" alt="Godot gameplay prototype screenshot">
         </article>
 
         <article class="project-card">
@@ -90,21 +75,50 @@
       </div>
     </section>
 
-    <section id="skills" class="section alt">
+    <section id="gallery" class="section alt">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Practical skills shown through the prototype</h2>
+          <p class="eyebrow">Project Screenshots</p>
+          <h2>Visual evidence from the Godot prototype</h2>
         </div>
 
-        <div class="skills-grid">
-          <div class="skill"><strong>Godot Engine</strong><span>Scenes, nodes, project setup</span></div>
-          <div class="skill"><strong>GDScript</strong><span>Basic scripting and interaction</span></div>
-          <div class="skill"><strong>Digital Assets</strong><span>Importing, placement, scaling</span></div>
-          <div class="skill"><strong>UI Setup</strong><span>Labels, panels, buttons</span></div>
-          <div class="skill"><strong>QA Review</strong><span>Alignment, collisions, usability</span></div>
-          <div class="skill"><strong>Documentation</strong><span>Clear README and screenshots</span></div>
+        <div class="gallery-grid">
+          <figure>
+            <img src="assets/images/hero-scene.png" alt="Main Godot scene preview">
+            <figcaption>Main scene composition</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/images/gameplay.png" alt="Running Godot prototype">
+            <figcaption>Prototype gameplay view</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/images/ui-demo.png" alt="Godot UI demo">
+            <figcaption>UI overlay and labels</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/images/asset-import.png" alt="Imported Godot assets">
+            <figcaption>Imported asset workflow</figcaption>
+          </figure>
         </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Practical skills shown through the prototype</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill"><strong>Godot Engine</strong><span>Scenes, nodes, project setup</span></div>
+        <div class="skill"><strong>GDScript</strong><span>Basic scripting and interaction</span></div>
+        <div class="skill"><strong>Digital Assets</strong><span>Importing, placement, scaling</span></div>
+        <div class="skill"><strong>UI Setup</strong><span>Labels, panels, buttons</span></div>
+        <div class="skill"><strong>QA Review</strong><span>Alignment, collisions, usability</span></div>
+        <div class="skill"><strong>Documentation</strong><span>Clear README and screenshots</span></div>
       </div>
     </section>
 
@@ -162,3 +176,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+```
